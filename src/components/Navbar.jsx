@@ -3,7 +3,7 @@ import Home from './Home'
 import Profile from './Profile'
 import './stylesheets/navbar.css'
 import {BrowserRouter as Router, Link, Route} from 'react-router-dom'
-import {FaHome, FaUserCircle} from 'react-icons/fa'
+import * as Icons from 'react-icons/all'
 
 class Navbar extends React.Component {
 
@@ -14,12 +14,21 @@ class Navbar extends React.Component {
                     <ul>
                         <li>
                             <Link to='/'>
-                                <FaHome />
+                                <Icons.RiHome4Line />
                             </Link>
                         </li>
                         <li>
+                            <Icons.FiSearch />
+                        </li>
+                        <li className='add'>
+                            <Icons.FiPlus />
+                        </li>
+                        <li>
+                            <Icons.RiMessageLine />
+                        </li>
+                        <li>
                             <Link to='/profile'>
-                                <FaUserCircle/>
+                                <Icons.RiUserLine/>
                             </Link>
                         </li>
                     </ul>

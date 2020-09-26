@@ -7,7 +7,6 @@ class App extends React.Component {
     return ( 
       <React.Fragment>
         <Navbar />
-        <div className='footer-line'></div>
       </React.Fragment>
      )
   }

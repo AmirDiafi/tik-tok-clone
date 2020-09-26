@@ -1,0 +1,106 @@
+
+.video{
+    position: relative;
+    width: 100%;
+    height:100%;
+    z-index: 1;
+}
+
+.video .the-video {
+    height: 100%;
+}
+
+.video video {
+    width: 100%;
+    height: 100%;
+    background: #131010;
+}
+
+.video .icons {
+    position: absolute;
+    padding: 10px;
+    top:0;
+    right: 0;
+    color: #FFF;
+    text-align: center;
+    z-index:2
+}
+
+.video .icons div {
+    margin: 30px auto;
+}
+
+.video .icons div span{
+    cursor: pointer
+}
+
+.video .icons .image {
+    position: relative;
+    width:40px;
+    height:40px;
+}
+
+.video .icons .image img{
+    width:100%;
+    height: 100%;
+    border-radius: 100%;
+    cursor: pointer
+}
+
+.video .icons .image span svg{
+    position: absolute;
+    bottom: -10px;
+    left:50%;
+    font-size: 17px;
+    transform: translateX(-50%);
+    color: #fff;
+    background: #ee2318;
+    display:block;
+    width:17px;
+    height:17px;
+    border-radius: 100%;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video .icons div.like span,
+.video .icons div.share span,
+.video .icons div.comment span{
+    font-size: 18px;
+    display: block
+}
+
+.video .icons div.like svg,
+.video .icons div.share svg,
+.video .icons div.comment svg{
+    font-size: 35px;
+    display: block;
+    margin: auto;
+    cursor: pointer
+}
+
+.video .play-pause {
+    position: absolute;
+    width:100%;
+    height:100%;
+    z-index:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.video .play-pause svg {
+    font-size: 45px;
+    opacity: 0;
+    transition: all .3s linear;
+    cursor: pointer;
+    color: #FFF;
+}
+
+
+.video .play-pause:hover svg{
+    opacity: 1;
+}
